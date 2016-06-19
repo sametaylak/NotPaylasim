@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.sametaylak.notpaylasim.MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <GridView
+            android:layout_weight="1"
+            android:id="@+id/galleryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:columnWidth="100dp"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <com.google.android.gms.ads.AdView
+            android:layout_weight="7"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4931702315582966/7443471538">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:id="@+id/bottomLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:id="@+id/btnGaleri"
+            android:layout_weight="1"
+            android:text="Fotolar"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="21sp"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            />
+        <ImageButton
+            android:layout_weight="1"
+
+            android:id="@+id/setPhoto"
+            android:src="@drawable/photo"
+            android:scaleType="fitCenter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            />
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_weight="1"
+            android:text="Yardım"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="21sp"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
